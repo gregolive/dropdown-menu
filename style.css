@@ -1,0 +1,71 @@
+:root {
+  --dropdown-btn-color: white;
+  --dropdown-btn-bg-color: royalblue;
+  --dropdown-hover-color: cornflowerblue;
+  --dropdown-hover-bg-color: rgba(0, 0, 0, 0.03);
+  --dropdown-menu-bg-color: white;
+  --dropdown-menu-border: 1px solid lightgrey;
+  --dropdown-font-size: 1.1rem;
+  --dropdown-border-rad: 0.25rem;
+  --dropdown-btn-pad: 0.75rem 1rem;
+  --dropdown-menu-pad: 0.25rem 0;
+  --dropdown-item-pad: 0.25rem 1rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--dropdown-hover-color);
+}
+
+.text-link {
+  font-weight: 500;
+}
+
+.btn-dropdown {
+  color: var(--dropdown-btn-color);
+  background-color: var(--dropdown-btn-bg-color);
+  cursor: pointer;
+  font-size: var(--dropdown-font-size);
+  border: none;
+  border-radius: var(--dropdown-border-rad);
+  padding: var(--dropdown-btn-pad);
+}
+
+.dropdown-menu {
+  list-style: none;
+  opacity: 0;
+  background-color: var(--dropdown-menu-bg-color);
+  border: var(--dropdown-menu-border);
+  border-radius: var(--dropdown-border-rad);
+  min-width: 10rem;
+  height: 0;
+  position: absolute;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.dropdown-menu.show {
+  transition: opacity 0.5s ease-out;
+  opacity: 1;
+  height: auto;
+  padding: var(--dropdown-menu-pad);
+}
+
+ul {
+  margin: 0;
+}
+
+.dropdown-item {
+  color: black;
+  text-decoration: none;
+  padding: var(--dropdown-item-pad);
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: var(--dropdown-hover-bg-color);
+}

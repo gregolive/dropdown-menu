@@ -1,0 +1,24 @@
+{
+  "name": "@gregolive/dropdown",
+  "version": "1.0.0",
+  "description": "A simple JS powered dropdown menu. Can be activated by click or hover.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregolive/dropdown-menu.git"
+  },
+  "keywords": [
+    "javascript",
+    "dropdown",
+    "menu"
+  ],
+  "author": "Gregory Olive",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gregolive/dropdown-menu/issues"
+  },
+  "homepage": "https://github.com/gregolive/dropdown-menu#readme"
+}
