@@ -1,6 +1,6 @@
 # Dropdown Menu
 
-Add simple javascript-powered dropdown menus to HTML.
+A simple Javascript-powered dropdown menu. Can be activated by click or hover.
 
 [Live demo](https://gregolive.github.io/dynamic-ui-design) 👈
 
@@ -43,7 +43,7 @@ const links = [
 dropdown('Click Me', links);
 
 // Dropdown on hover
-dropdown('Hover Me', links, );
+dropdown('Hover Me', links, true);
 ```
 
 ## License
