@@ -79,4 +79,4 @@ const dropdown = (title, links, hover = false) => {
   return container;
 };
 
-module.exports = dropdown;
+export default dropdown;
