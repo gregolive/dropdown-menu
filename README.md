@@ -44,9 +44,10 @@ const links = [
 ];
 
 const clickDropdown = dropdown('Click Me', links);
+document.appendChild(clickDropdown);
 
 const hoverDropdown dropdown('Hover Me', links, true);
-
+document.appendChild(hoverkDropdown);
 ```
 
 ## License
