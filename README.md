@@ -52,4 +52,4 @@ document.appendChild(hoverkDropdown);
 
 ## License
 
-MIT
+ISC
