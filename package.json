@@ -1,6 +1,6 @@
 {
   "name": "@gregolive/dropdown",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple JS powered dropdown menu. Can be activated by click or hover.",
   "main": "index.js",
   "scripts": {
