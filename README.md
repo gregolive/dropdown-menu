@@ -4,9 +4,11 @@ A simple Javascript-powered dropdown menu. Can be activated by click or hover.
 
 [Live demo](https://gregolive.github.io/dynamic-ui-design) 👈
 
+[npm package](https://gregolive.github.io/dynamic-ui-design) 📦
+
 ## Prerequisites
 
-For icons to display properly, please install [font-awesome](https://www.npmjs.com/package/font-awesome)
+For icons to display, please install [font-awesome](https://www.npmjs.com/package/font-awesome).
 
 ## Installation
 
@@ -24,11 +26,13 @@ import dropdown from '@gregolive/dropdown';
 
 ## Usage
 
-Pass three arguments into the dropdown function:
+Pass 2 or 3 arguments into the dropdown function:
 
 1. <code>title</code> string for the dropdown button
 2. <code>links</code> object containing the text and href for the menu items
-3. <code>hover</code> boolean that defaults to false
+3. <code>hover</code> boolean (optional, defaults to false)
+
+Append to Dom.
 
 Examples:
 
@@ -39,11 +43,10 @@ const links = [
   { text: 'Me too 🤙', href: '#' },
 ];
 
-// Dropdown on click
-dropdown('Click Me', links);
+const clickDropdown = dropdown('Click Me', links);
 
-// Dropdown on hover
-dropdown('Hover Me', links, true);
+const hoverDropdown dropdown('Hover Me', links, true);
+
 ```
 
 ## License
