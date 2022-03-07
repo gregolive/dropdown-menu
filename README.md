@@ -2,9 +2,9 @@
 
 A simple Javascript-powered dropdown menu. Can be activated by click or hover.
 
-[Live demo](https://gregolive.github.io/dynamic-ui-design) 👈
+[Live demo](https://gregolive.github.io/dynamic-ui-design/#dropdown-demo) 👈
 
-[npm package](https://gregolive.github.io/dynamic-ui-design) 📦
+[npm package](https://www.npmjs.com/package/@gregolive/dropdown) 📦
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ Pass 2 or 3 arguments into the dropdown function:
 2. <code>links</code> object containing the text and href for the menu items
 3. <code>hover</code> boolean (optional, defaults to false)
 
-Append to Dom.
+Append to the DOM.
 
 Examples:
 
@@ -44,10 +44,18 @@ const links = [
 ];
 
 const clickDropdown = dropdown('Click Me', links);
-document.appendChild(clickDropdown);
+document.body.appendChild(clickDropdown);
 
 const hoverDropdown dropdown('Hover Me', links, true);
-document.appendChild(hoverkDropdown);
+document.body.appendChild(hoverkDropdown);
+```
+
+Default styling (colors, padding, etc.) can be overridden by overriding the CSS variables in:
+
+```
+:root {
+  ...
+}
 ```
 
 ## License
